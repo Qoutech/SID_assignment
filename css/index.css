@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+body{
+    font-family: lato;
+    /* padding: 0;
+    margin: 0; */
+    /* width: 100%; */
+}
+
+.topnav{
+    width: 100%;
+}
+
+.topnav .my-button{
+   float: right;
+}
+
+nav{
+    padding-left:5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link{
+    display: flex;
+    list-style: none;
+}
+
+.nav-link li{
+    margin-right: 20px;
+}
+
+.nav-link a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.active{
+    color: #e71800;
+}
+
+.my-button{
+    background-color: #e71800;
+    color: white;
+    font-weight: 600px;
+    padding: 14px 17px 15px 14px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.my-button:hover {
+    background-color: #894BF3;
+    color: white;
+}
+
+.content{
+    background-image: url('ben.jpg');
+    background-size: 100% no-repeat;
+    background-position: center;
+    height: 400px;
+    color: white;
+    padding: 3%;
+
+}
+
+.content h1{
+    font-size:50px;
+    font-weight: 600;
+    
+}
+
+h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.subtitle{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.about{
+    text-align: center;
+}
+
+h2{
+    font-size: 32px;
+}
+
+p{
+    font-size: 16px;
+}
+
+.under{
+    background-color: #e71800;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.column{
+    padding: 20px;
+}
+
+.black{
+    color: black;
+}
+
+.container-logistices {
+    width: 100%;
+    display: grid;
+    grid-template-columns:33% 33% 33%;
+}
+
+.column{
+     padding: 10px; 
+}
+
+.h4 {
+    color: #000;
+font-family: Lato;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.deliver{
+    padding: 20px;
+    background-color:#FFBF14;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    height: 4%;
+    align-content: center;
+    
+}
+
+.deliver button{
+    height: 48px;
+    width: max-content;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #e71800;
+    justify-content: center;
+    margin: 50px;
+    color: white;
+    border: none;
+}
+
+.quotearea{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 20px;
+}
+
+.card{
+    display: flex;
+    align-content: center;
+    justify-content:last baseline;
+}
+
+.card img{
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    
+}
+
+.card div{
+    padding: 20px;
+}
+
+form{
+display: grid;
+grid-template-columns: 50% 50%;
+align-items: flex-start;
+align-content: flex-start;
+gap: 20px 21px;
+flex-wrap: wrap;
+width:100%;
+}
+
+.column p{
+    text-wrap: wrap;
+}
+
+form #quotein{
+    width: 200%;
+    height: 190px;
+}
+
+.formside button{ 
+    width: 150px;
+   
+}
+
+.formside input{ 
+    height: 25px;
+   
+}
+
+.foot{
+    width: 100%;
+    background-color: #000;
+    color: white;
+    block-size: auto;
+}
+
+footer{
+    color: white;
+    display:grid;
+    grid-template-columns: 25% 15% 30% 20%;
+    padding-left: 25px;
+    gap: 2%;
+    margin-top: 2px;
+}
+footer li{
+    list-style: none;
+    gap: 20x;
+}
+
+.quick a{
+    color: white;
+    gap: 2px;
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.news button{
+   width: 100px;
+   height: 40px;
+}
+
+.menu{
+    display:none;
+    visibility: hidden;
+}
+
+.menu div{
+   display:none;
+   width: 30px;
+   height: 3px;
+   background-color: #000;
+   margin: 6px 0;
+}
+
+@media only screen and (max-width: 680px) {
+
+        body{
+           /* width:97%; */
+            align-content: center;
+    padding: 0;
+        }
+        nav{
+            justify-content:left;
+        }
+        
+    
+    
+        .content{
+            width:100%;
+            padding: 0;
+            margin-left: 1px;
+            /* padding-left: 2% */
+        }
+        .column img{
+            width: 100%;
+            padding: 0%;
+        }
+        .nav-link{
+            visibility: hidden;
+            display: none;
+            flex: none;
+        }
+        .button-container{
+            visibility: hidden;
+        }
+        .menu div{
+            display: block;
+            visibility: visible;
+            width: 30px;
+            
+         }
+    .menu{
+        visibility: visible;
+        display: inline-block;
+    }
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            /* padding: 2%; */
+        }
+    .column{
+            padding: 0%;
+            width: 100%;
+            /* padding-left: 1%; */
+        }
+        
+        .black{
+            color: black;
+        }
+        
+        .container-logistices {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            /* height: 230px; */
+            border-radius: 10px 10px 0px 0px;
+        }
+        .column{
+            /* padding-left: 3%; */
+            text-wrap: wrap;
+        }
+        
+        .h4 {
+            color: #000;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        }
+        .container img{
+            width: 100%;
+        }
+        .deliver{
+            padding: 0;
+            padding-left: 1%;
+            background-color:#FFBF14;
+            display: flex;
+            flex-direction: column;
+            height:fit-content;
+            align-content: center;
+            width: 100%;
+            
+        }
+        .deliver button{
+            height: auto;
+            width: max-content;
+            align-items: center;
+            border-radius: 8px;
+            background-color: #e71800;
+            justify-content: center;
+            margin: 5%;
+            color: white;
+            border: none;
+        }
+        .quotearea{
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            /* padding-left: 3%; */
+        }
+        .card{
+            display: flex;
+            align-content: center;
+            /* justify-content:last baseline; */
+        }
+        .card img{
+            width: 10%;
+            height: 40px;
+            align-self: center;
+            
+        }
+        .card div{
+            padding: 0;
+            padding-left: 3%;
+        }
+        form{
+        display: flex;
+        flex-direction: column;
+        gap: 21px 21px;
+        /* flex-wrap: wrap; */
+        width:100%;
+        }
+        .column p{
+            text-wrap: wrap;
+        }
+        form #quotein{
+            width: 100%;
+            height:auto;
+        }
+        .formside input{ 
+            width: 100%;
+           
+        }
+        .formside button{ 
+            width: 150px;
+           
+        }
+        .foot{
+            background-color: #000;
+            color: white;
+            /* block-size: auto; */
+            padding-left: 0;
+            width: 100%;
+        }
+        footer{
+            color: white;
+            display:flex;
+           flex-direction: column;
+            align-content: center;
+            text-align: center;
+        }
+        footer li{
+            list-style: none;
+            gap: 2px;
+        }
+        .quick a{
+            color: white;
+            gap: 2px;
+        }
+        .news{
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        .news button{
+           width: 20%;
+           height: 40px;
+        }
+    }
